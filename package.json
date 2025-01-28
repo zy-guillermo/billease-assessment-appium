@@ -1,0 +1,22 @@
+{
+  "name": "android-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "appium": "^2.15.0",
+    "chai": "^5.1.2",
+    "webdriver": "^9.7.0"
+  },
+  "devDependencies": {
+    "appium-chromium-driver": "^1.5.0",
+    "appium-uiautomator2-driver": "^3.10.0",
+    "mocha": "^11.1.0"
+  }
+}
