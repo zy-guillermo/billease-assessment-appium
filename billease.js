@@ -1,7 +1,7 @@
 const { remote } = require('webdriverio');
 
 describe('Billease Automation Test Suite', function () {
-    this.timeout(60000); // Set the timeout for Appium actions to 60 seconds
+    this.timeout(60000);
 
     let chromeDriver;
     let appDriver;
@@ -42,9 +42,7 @@ describe('Billease Automation Test Suite', function () {
         // Clean Up Chrome Session
         await chromeDriver.deleteSession();
         console.log('Chrome session ended.');
-
-        // Add delay to ensure Chrome session is fully terminated
-        await new Promise(resolve => setTimeout(resolve, 2000));  // Wait for 2 seconds
+        await new Promise(resolve => setTimeout(resolve, 2000));  
     });
 
     it('should be redirected to Billease app', async () => {
@@ -52,8 +50,8 @@ describe('Billease Automation Test Suite', function () {
             platformName: 'Android',
             'appium:deviceName': 'RRCTC04MBSN',
             'appium:automationName': 'UiAutomator2',
-            'appium:appPackage': 'ph.billeasev2.mobile', // Appium-specific capability
-            'appium:appActivity': 'ph.billeasev2.mobile.MainActivity', // Appium-specific capability
+            'appium:appPackage': 'ph.billeasev2.mobile', 
+            'appium:appActivity': 'ph.billeasev2.mobile.MainActivity', 
             'appium:noReset': true,
             'appium:fullReset': false,
         };
@@ -87,7 +85,7 @@ describe('Billease Automation Test Suite', function () {
     });
     
     it('should proceed to Forgot Password page and validate fields', async () => {
-        // Validate the Login Screen on the Billease App
+        // Validate the Forgot Password Screen on the Billease App
         const title = await appDriver.$('android=new UiSelector().resourceId("ph.billeasev2.mobile:id/password_lock_title")');
         const email = await appDriver.$('android=new UiSelector().text("Enter mobile/email")');
         const reset = await appDriver.$('android=new UiSelector().resourceId("ph.billeasev2.mobile:id/reset_password_reset")');
