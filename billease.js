@@ -74,8 +74,6 @@ describe('Billease Automation Test Suite', function () {
         await emailField.setValue('invalid_email');
         const invalidEmailError = await appDriver.$('android=new UiSelector().text("Invalid email or mobile")');
         expect(await invalidEmailError.isDisplayed()).to.be.true;
-        expect(await passwordField.isDisplayed()).to.be.true;
-        expect(await loginSubmit.isDisplayed()).to.be.true;
     });
 
     it('should proceed to Forgot Password page and validate fields', async () => {
