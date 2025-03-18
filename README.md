@@ -2,7 +2,7 @@
 
 script file = billease.js
 
-Replace Device Name - line 21 and 28
+Replace Device name - line 21 and 28
 
 **Terminal - Appium Server Config**
 
