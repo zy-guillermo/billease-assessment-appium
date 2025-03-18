@@ -9,7 +9,7 @@ describe('Billease Automation Test Suite', function () {
     it('should launch Chrome mobile browser', async () => {
         const chromeCapabilities = {
             platformName: 'Android',
-            'appium:deviceName': 'RRCTC04MBSN',
+            'appium:deviceName': 'RFCY21E99ZD',
             browserName: 'Chrome',
             'appium:automationName': 'UiAutomator2',
         };
