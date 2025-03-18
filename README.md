@@ -1,7 +1,7 @@
-# billease-assessment-appium
+**billease-assessment-appium**
 script file = billease.js
 
-You will need to update device name in line 12 of billease.js
+Replace Device Name - line 21 and 28
 
 **Terminal - Appium Server Config**
 
